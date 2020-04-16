@@ -4,6 +4,8 @@ Adds syntax highlighting for [CEL (Common Expression Language)](https://opensour
 
 <img alt="CEL syntax highlighting" src="images/cel-syntax-highlighting.png" width="433px">
 
+Install it from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=hmarr.cel).
+
 ## Developing
 
 Clone the project, and open up in vscode. Start a debugging session (just press F5) to launch a new window with the plugin loaded, and hack away.
