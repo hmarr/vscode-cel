@@ -1,0 +1,44 @@
+// SYNTAX TEST "source.cel" "operators"
+
+   1 + 2
+// ^ constant.numeric.integer.cel
+//   ^ keyword.operator.arithmetic.cel
+//     ^ constant.numeric.integer.cel
+
+   1 - 2
+//   ^ keyword.operator.arithmetic.cel
+
+   1*2
+// ^ constant.numeric.integer.cel
+//  ^ keyword.operator.arithmetic.cel
+//   ^ constant.numeric.integer.cel
+
+   1/2
+//  ^ keyword.operator.arithmetic.cel
+
+   1 in 2
+// ^ constant.numeric.integer.cel
+//   ^^ keyword.operator.comparison.cel
+//      ^ constant.numeric.integer.cel
+
+   1in[]
+// ^ constant.numeric.integer.cel
+//  ^^ keyword.operator.comparison.cel
+//    ^ - keyword.operator.comparison.cel
+
+   1 < 2
+//   ^ keyword.operator.comparison.cel
+
+   1 > 2
+//   ^ keyword.operator.comparison.cel
+
+   1 == 2
+//   ^^ keyword.operator.comparison.cel
+
+   1>=2
+// ^ constant.numeric.integer.cel
+//  ^^ keyword.operator.comparison.cel
+//    ^ constant.numeric.integer.cel
+
+   1<=2
+//  ^^ keyword.operator.comparison.cel

@@ -1,0 +1,14 @@
+// SYNTAX TEST "source.cel" "parentheses"
+
+   (1)
+// ^ punctuation.parenthesis.begin.cel
+//  ^ constant.numeric.integer.cel
+//   ^ punctuation.parenthesis.end.cel
+
+   (1 + 2)
+// ^ punctuation.parenthesis.begin.cel
+//       ^ punctuation.parenthesis.end.cel
+
+   (1  2)
+// ^ punctuation.parenthesis.begin.cel
+//      ^ punctuation.parenthesis.end.cel

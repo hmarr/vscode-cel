@@ -1,0 +1,23 @@
+// SYNTAX TEST "source.cel" "maps"
+
+   {'a': 1, 2: 'b'}
+// ^^^^^^^^^^^^^^^^ meta.structure.map.cel
+// ^ punctuation.definition.map.begin.cel
+//  ^^^ string.quoted.single.cel
+//     ^ punctuation.separator.map.cel
+//       ^ constant.numeric.integer.cel
+//        ^ punctuation.separator.map.cel
+//          ^ constant.numeric.integer.cel
+//           ^ punctuation.separator.map.cel
+//             ^^^ string.quoted.single.cel
+//                ^ punctuation.definition.map.end.cel
+
+   {
+// ^ punctuation.definition.map.begin.cel
+    true: 1,
+//  ^^^^ constant.language.cel
+//      ^ punctuation.separator.map.cel
+//        ^ constant.numeric.integer.cel
+//         ^ punctuation.separator.map.cel
+   }
+// ^ punctuation.definition.map.end.cel

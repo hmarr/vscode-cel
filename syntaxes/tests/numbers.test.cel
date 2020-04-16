@@ -1,0 +1,22 @@
+// SYNTAX TEST "source.cel" "numbers"
+
+   123
+// ^^^ constant.numeric.integer.cel
+
+   123u
+// ^^^^ constant.numeric.integer.cel
+
+   123U
+// ^^^^ constant.numeric.integer.cel
+
+   123.456
+// ^^^^^^^ constant.numeric.floating-point.cel
+
+   .456
+// ^^^^ constant.numeric.floating-point.cel
+
+   123.456e-789
+// ^^^^^^^^^^^^ constant.numeric.floating-point.cel
+
+   123E+789
+// ^^^^^^^^ constant.numeric.floating-point.cel

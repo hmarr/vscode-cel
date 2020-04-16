@@ -1,0 +1,25 @@
+// SYNTAX TEST "source.cel" "objects"
+
+   obj{a: 1, b:2}
+// ^^^^^^^^^^^^^^ meta.structure.object.cel
+// ^^^ variable.object.cel
+//    ^ punctuation.definition.object.begin.cel
+//     ^^ entity.name.type.attribute-name.cel
+//        ^ constant.numeric.integer.cel
+//         ^ punctuation.separator.object.cel
+//           ^^ entity.name.type.attribute-name.cel
+//             ^ constant.numeric.integer.cel
+//              ^ punctuation.definition.object.end.cel
+
+   obj{
+// ^^^ variable.object.cel
+//    ^ punctuation.definition.object.begin.cel
+    a: 1,
+//  ^^ entity.name.type.attribute-name.cel
+//     ^ constant.numeric.integer.cel
+//      ^ punctuation.separator.object.cel
+    b:2
+//  ^^ entity.name.type.attribute-name.cel
+//    ^ constant.numeric.integer.cel
+   }
+// ^ punctuation.definition.object.end.cel

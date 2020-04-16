@@ -1,0 +1,35 @@
+// SYNTAX TEST "source.cel" "strings"
+
+   "foo"
+// ^^^^^ string.quoted.single.cel
+
+   'foo'
+// ^^^^^ string.quoted.single.cel
+
+   'foo\''
+// ^^^^^^^ string.quoted.single.cel
+//     ^^ constant.character.escape.cel
+
+   "foo\" \t \xFF \0888 \uBEEF"
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.single.cel
+//     ^^ constant.character.escape.cel
+//        ^^ constant.character.escape.cel
+//           ^^^ constant.character.escape.cel
+//                ^^^^^ constant.character.escape.cel
+//                      ^^^^^^ constant.character.escape.cel
+
+   r"raw"
+// ^^^^^ string.quoted.single.cel
+// ^ storage.type.raw-string.cel
+
+   R'raw'
+// ^^^^^ string.quoted.single.cel
+// ^ storage.type.raw-string.cel
+
+   r"foo\"
+// ^^^^^^^ string.quoted.single.cel
+// ^^^^^^^ - constant.character.escape.cel
+
+   r"foo \t \xFF \0888 \uBEEF"
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.quoted.single.cel
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^ - constant.character.escape.cel

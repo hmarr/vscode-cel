@@ -1,0 +1,10 @@
+// SYNTAX TEST "source.cel" "functions"
+
+   foo(1)
+// ^^^ variable.function.cel
+//    ^ punctuation.parenthesis.begin.cel
+//      ^ punctuation.parenthesis.end.cel
+
+
+   while(1)
+// ^^^ invalid.illegal.cel

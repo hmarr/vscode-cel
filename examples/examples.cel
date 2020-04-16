@@ -1,0 +1,136 @@
+// Comments
+
+//no space
+// with space
+hello there 123 // not at the start
+
+
+// Integers
+
+123
+123u
+123U
+
+
+// Floats
+
+123.456
+.456
+123e789
+123e+789
+123.456e789
+123.456E-789
+
+
+// Single-line strings
+
+start "Simple single line" end
+start 'Simple single line' end
+start "Single line with \" escaped quote" end
+start 'Single line with \' escaped quote' end
+start 'Single line with escape chars \t \b \x0F \uDEAD \UDEADBEEF \0876'
+start 'Single line with bad escape chars \a \- \x0G \uDEA \UDEADBEEF1 \0987'
+start r"Raw single line" end
+start r'Raw single line' end
+start R"Raw single line" end
+start R'Raw single line' end
+start r"Raw \x0F single line \" escaped quote" end
+start r'Raw \x0F single line \' escaped quote' end
+start R"Raw \x0F single line \" escaped quote" end
+start R'Raw \x0F single line \' escaped quote' end
+
+
+// Multi-line strings
+
+start """Simple
+multi-line""" end
+
+start '''Simple
+but long
+multi-line''' end
+
+start """Multi-line 
+with \""" \x0F \uDEAD escaped characters""" end
+
+start '''Multi-line 
+with \''' \x0F \uDEAD escaped characters''' end
+
+start r"""Raw
+multi-line""" end
+
+start r'''Raw
+multi-line''' end
+
+start R"""Raw
+multi-line""" end
+
+start R'''Raw
+multi-line''' end
+
+start r"""Raw \x0F
+multi-line \x0F \uDEAD \""" escaped quote end
+
+start r'''Raw \x0F
+multi-line \x0F \uDEAD \''' escaped quote end
+
+start R"""Raw \x0F
+multi-line \x0F \uDEAD \""" escaped quote end
+
+start R'''Raw \x0F
+multi-line \x0F \uDEAD \''' escaped quote end
+
+
+// Operators
+
+a < b  && a<b
+a <= b && a<=b
+a > b  && a>b
+a >= b && a>=b
+a == b && a==b
+a != b && a!=b
+a in b
+a && b && a&&b
+a || b && a||b
+a + b  && a+b
+a - b  && a-b
++a
+-a
+!a
+
+
+// Groups
+
+((1 + 2) * 3)
+
+
+// Lists
+
+[123, "foo"]
+[1,2,3]
+[1, [2, 3], [4,[5,6]]]
+
+
+// Objects
+
+foo{name: "alice"}
+foo{name: "alice", location: "uk"}
+foo{
+  name: "alice",
+  location: "uk",
+}
+
+
+// Maps
+
+{1: "hello", "goodbye": 2, [1,2,3]: (2 * 3)}
+{
+  true: "hello",
+  "goodbye": 2,
+  [1,2,3]: (2 * 3),
+}
+
+
+// Function calls
+
+size(account.emails)
+map.keys({'a': 1, 'b': 2})

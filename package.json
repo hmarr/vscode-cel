@@ -1,0 +1,40 @@
+{
+  "name": "vscode-cel",
+  "displayName": "CEL",
+  "description": "CEL (Common Expression Language) language support for Visual Studio Code",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "vscode-tmgrammar-test -s source.cel -t 'syntaxes/tests/*.test.cel' -g syntaxes/cel.tmLanguage.json"
+  },
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "cel",
+        "aliases": [
+          "CEL",
+          "cel"
+        ],
+        "extensions": [
+          ".cel"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cel",
+        "scopeName": "source.cel",
+        "path": "./syntaxes/cel.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode-tmgrammar-test": "0.0.8"
+  }
+}

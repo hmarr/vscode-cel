@@ -1,0 +1,9 @@
+// SYNTAX TEST "source.cel" "comments"
+
+   // foo
+// ^^^^^^ comment.line.double-slash.cel
+// ^^ punctuation.definition.comment.cel
+
+   //foo
+// ^^^^^ comment.line.double-slash.cel
+// ^^ punctuation.definition.comment.cel

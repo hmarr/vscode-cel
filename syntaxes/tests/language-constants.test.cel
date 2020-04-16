@@ -1,0 +1,16 @@
+# SYNTAX TEST "source.cel" "language constants"
+
+  true
+# ^^^^ constant.language.cel
+
+  True
+# ^^^^ - constant.language.cel
+
+  false
+# ^^^^^ constant.language.cel
+
+  null
+# ^^^^ constant.language.cel
+
+  nil
+# ^^^ - constant.language.cel

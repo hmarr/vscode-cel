@@ -1,0 +1,17 @@
+// SYNTAX TEST "source.cel" "lists"
+
+   [1, "foo"]
+// ^^^^^^^^^^ meta.structure.list.cel
+// ^ punctuation.definition.list.begin.cel
+//  ^ constant.numeric.integer.cel
+//   ^ punctuation.separator.list.cel
+//     ^^^^^ string.quoted.single.cel
+//          ^ punctuation.definition.list.end.cel
+
+   [[1]]
+// ^^^^^ meta.structure.list.cel
+// ^ punctuation.definition.list.begin.cel
+//  ^ punctuation.definition.list.begin.cel
+//   ^ constant.numeric.integer.cel
+//    ^ punctuation.definition.list.end.cel
+//     ^ punctuation.definition.list.end.cel
