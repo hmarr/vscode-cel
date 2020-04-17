@@ -1,5 +1,8 @@
 # vscode-cel
 
+<a href="https://github.com/hmarr/vscode-cel/actions?query=workflow%3ACI"><img src="https://github.com/hmarr/vscode-cel/workflows/CI/badge.svg" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=hmarr.cel"><img src="https://img.shields.io/visual-studio-marketplace/v/hmarr.cel?label=vscode%20marketplace&color=blue" /></a>
+
 Adds syntax highlighting for [CEL (Common Expression Language)](https://opensource.google/projects/cel) to Visual Studio Code.
 
 <img alt="CEL syntax highlighting" src="images/cel-syntax-highlighting.png" width="433px">
