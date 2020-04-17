@@ -5,7 +5,9 @@
 
 Adds syntax highlighting for [CEL (Common Expression Language)](https://opensource.google/projects/cel) to Visual Studio Code.
 
-<img alt="CEL syntax highlighting" src="images/cel-syntax-highlighting.png" width="433px">
+<p align="center">
+  <img alt="CEL syntax highlighting" src="images/cel-syntax-highlighting.png" width="433px">
+</p>
 
 Install it from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=hmarr.cel).
 
