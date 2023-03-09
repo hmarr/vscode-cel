@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.2
+
+- Upgrade outdated dependencies
+- Fix badges and images in README
+
 ## v0.1.1
 
 - Add license

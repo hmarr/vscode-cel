@@ -2,7 +2,7 @@
   "name": "cel",
   "displayName": "CEL",
   "description": "CEL (Common Expression Language) language support for Visual Studio Code",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "hmarr",
   "license": "MIT",
   "repository": {
@@ -10,7 +10,7 @@
     "url": "https://github.com/hmarr/vscode-cel"
   },
   "scripts": {
-    "test": "vscode-tmgrammar-test -s source.cel -t 'syntaxes/tests/*.test.cel' -g syntaxes/cel.tmLanguage.json"
+    "test": "vscode-tmgrammar-test 'syntaxes/tests/*.test.cel'"
   },
   "engines": {
     "vscode": "^1.44.0"
@@ -42,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "vscode-tmgrammar-test": "0.0.8"
+    "vscode-tmgrammar-test": "^0.1.1"
   }
 }
